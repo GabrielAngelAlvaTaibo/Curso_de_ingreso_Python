@@ -40,7 +40,10 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
-        pass
+        valor_primero = int(self.txt_operador_a.get())
+        valor_segundo = int(self.txt_operador_b.get())
+        resto_división = valor_primero % valor_segundo
+        alert("","El resto de dividir:"f"entre {valor_primero} y {valor_segundo} es {resto_división}")
         
         
     
